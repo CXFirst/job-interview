@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: interview_test-cxfirst_web
+    command: /bin/bash -c "yarn start2"
+    env_file:
+      - .env
+    ports:
+      - "3002:3000"
+      - "3035:3035"
+    volumes:
+      - ./app:/app/app
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+      - ./yarn.lock:/app/yarn.lock
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    driver: bridge
+
