@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This test is a working base for an open discussion on the technical choices you had made.
+This test is a working base for an open discussion on the technical choices you will made.
 
 You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you estimated you have been on it for long enough. However, you shouldn't exceed 6 hours because after all it's just a job interview.
 
