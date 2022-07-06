@@ -44,7 +44,7 @@ A user should be able to retrieve his history from any calculator on any compute
 
 For that part you are free to choose any of the following frameworks : `Symfony`, `Laravel`, `Ruby`, `Falcon`, `Django`.
 
-For the database : `Mysql`, `MariaDb`, `Postgrey`, `MongoDB`, `ElasticSearch`, `Neo4j`.
+For the database : `Mysql`, `MariaDb`, `Postgres`, `MongoDB`, `ElasticSearch`, `Neo4j`.
 
 ## Installation
 
