@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     container_name: interview_test-cxfirst_web
-    command: /bin/bash -c "yarn start2"
+    command: /bin/bash -c "yarn start"
     env_file:
       - .env
     ports:
