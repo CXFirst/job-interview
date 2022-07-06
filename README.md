@@ -18,12 +18,12 @@ The current calculator look like that :
 
 <img src="public/assests/standard_calculator.png" alt="drawing" width="200"/>
 
-The goal is to have both a standard calculation mode (that is used for simple calculations like `+,-,*,/`  and with the usual number `0,1,...9`) and a scientific like mode for more complex calculations.
+The goal is to have both a standard calculation mode (that is used for simple calculations like `+,-,*,/`  and with the usual number `0,1,...9`) and a scientific like mode for more complex calculations based on third party providers.
 
 For that part you must stick to `ReactJs`.
 
 Here you could proceed by steps : implement first the functions `sin`, `cos`, `tan`, `exp`, `log` and the constants `pi`, `e`. 
-You are free to choose any of the following providers : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/Calculus*), `calculator-online` (*https://calculator-online.net/fr/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/calculatrice-formelle*).
+You are free to choose any of the following providers to integrate the needed functions : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/Calculus*), `calculator-online` (*https://calculator-online.net/fr/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/calculatrice-formelle*).
 
 Then you can implement the computation of integrals. 
 
@@ -33,7 +33,7 @@ Integrals have 4 parameters the lower bound `a`, the upper bound `b`, the functi
 
 You can consider that the functions will be of one parameter only (for example $f: x ↦ sin(x)$ and not $f: (x,y) ↦ cos(y) + sin(x)$ ).
 
-For that part, you are free to choose any of the following providers : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/fr/Calculus*), `calculator-online` (*https://calculator-online.net/fr/integral-calculator/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/definite-integral*).
+For that part, you are free to choose any of the following providers to integrate the needed functions : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/fr/Calculus*), `calculator-online` (*https://calculator-online.net/fr/integral-calculator/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/definite-integral*).
 
 You could choose two different third party provider for each step.
 
