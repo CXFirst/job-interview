@@ -2,15 +2,15 @@
 
 ## Abstract
 
-This test is a working base for an open discussion on the technical choices you will made.
+This test is a working base for an open discussion on the technical choices you will make.
 
-You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you estimated you have been on it for long enough. However, you shouldn't exceed 6 hours because after all it's just a job interview.
+You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you feel you have spent the appropriate amount of time. However, you shouldn't exceed 6 hours because after all it's just a job interview.
 
-You are free to ask any question by the medium you have been provided during the first stages of the hiring process (mail, teams, ...).
+You are free to ask any question by email or Teams if the interview was on Teams.
 
 ## Description
 
-The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculation done by third party services and calculation history.
+The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculation done by third party services. The calculation operations should also be logged.
 
 ### Front
 
@@ -29,7 +29,7 @@ Then you can implement the computation of integrals.
 
 $\int_a^b f(x, y, z, ...),\mathrm{d}x$
 
-Integrals have 4 parameters the lower bound `a`, the upper bound `b`, the function `f` and the function parameter we want to integrate `x` (that one is by default `x` and as an optional work if you have time you could let the user choose the variable for multivariable functions).
+Integrals have 4 parameters: the lower bound `a`, the upper bound `b`, the function `f` and the function parameter we want to integrate `x` (that one is by default `x` and as an optional work if you have time you could let the user choose the variable for multivariable functions).
 
 You can consider that the functions will be of one parameter only (for example $f: x ↦ sin(x)$ and not $f: (x,y) ↦ cos(y) + sin(x)$ ).
 
