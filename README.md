@@ -10,7 +10,7 @@ You are free to ask any question by email or Teams if the interview was on Teams
 
 ## Description
 
-The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculation done by third party services. The calculation operations should also be logged.
+The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculation done by third party services. The calculation operations should also be logged and replayable.
 
 ### Front
 
@@ -35,11 +35,11 @@ You can consider that the functions will be of one parameter only (for example $
 
 For that part, you are free to choose any of the following providers to integrate the needed functions : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/fr/Calculus*), `calculator-online` (*https://calculator-online.net/fr/integral-calculator/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/definite-integral*).
 
-You could choose two different third party provider for each step.
+You could choose two different third party providers for each step.
 
 ### Back
 
-The goal is to allow a user to view and replay any calculation and result he has done. Each user should be able to identify itself inside the calculator. But the loss of connectivity should not affect the use of the calculator, at least for the standard calculation mode.
+The goal is to allow a user to view and replay any calculation and result he has done. Each user should be able to identify him.herself inside the calculator. But the loss of connectivity should not affect the use of the calculator, at least for the standard calculation mode.
 A user should be able to retrieve his history from any calculator on any computer from the moment he has been authenticated.
 
 For that part you are free to choose any of the following frameworks : `Symfony`, `Laravel`, `Ruby`, `Falcon`, `Django`.
@@ -48,7 +48,7 @@ For the database : `Mysql`, `MariaDb`, `Postgres`, `MongoDB`, `ElasticSearch`, `
 
 ## Installation
 
-The project run inside a docker with webpack for ease of use. Run the following commands : 
+The project runs inside a docker with webpack for ease of use. Run the following commands : 
 ```bash
 docker-compose build
 docker-compose up
@@ -67,4 +67,4 @@ yarn start
 Send us back the project with :
 - the needed commands to run it on our computer
 - how long you have been on
-- what you would have done with more time, what you are not happy with inside the code, the project, ...
+- what you would have done if you had had more time, what you are not happy with inside the code, the project, ...
