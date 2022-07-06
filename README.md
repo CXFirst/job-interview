@@ -4,13 +4,13 @@
 
 This test is a working base for an open discussion on the technical choices you had made.
 
-You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you estimated you have been on it for long enough. However, you shouldn't excedd 6 hours because after all it's just a job interview.
+You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you estimated you have been on it for long enough. However, you shouldn't exceed 6 hours because after all it's just a job interview.
 
 You are free to ask any question by the medium you have been provided during the first stages of the hiring process (mail, teams, ...).
 
 ## Description
 
-The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculus done by third party services and calculus history.
+The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculation done by third party services and calculation history.
 
 ### Front
 
@@ -18,7 +18,7 @@ The current calculator look like that :
 
 <img src="public/assests/standard_calculator.png" alt="drawing" width="200"/>
 
-The goal is to have both a standard calculation mode (that is used for simple calculus like `+,-,*,/`  and with the usual number `0,1,...9`) and a scientific like mode for more complex calculation.
+The goal is to have both a standard calculation mode (that is used for simple calculations like `+,-,*,/`  and with the usual number `0,1,...9`) and a scientific like mode for more complex calculations.
 
 For that part you must stick to `ReactJs`.
 
@@ -44,14 +44,27 @@ A user should be able to retrieve his history from any calculator on any compute
 
 For that part you are free to choose any of the following frameworks : `Symfony`, `Laravel`, `Ruby`, `Falcon`, `Django`.
 
-For the database : `Mysql`, `MariaDb`, `Postgrey`, `MongoDb`, `ElasticSearch`, `Neo4j`.
+For the database : `Mysql`, `MariaDb`, `Postgrey`, `MongoDB`, `ElasticSearch`, `Neo4j`.
 
 ## Installation
 
-The project run inside a docker for ease of use. Run the following commands : 
+The project run inside a docker with webpack for ease of use. Run the following commands : 
 ```bash
 docker-compose build
 docker-compose up
 ```
 
 And go the `127.0.0.1:3035`
+
+You can also choose to run the project outside docker with `nodejs: ^14` (the version used inside the docker is `14.19.3`), then run :
+```bash
+yarn install
+yarn start 
+```
+
+## Once the project is done
+
+Send us back the project with :
+- the needed commands to run it on our computer
+- how long you have been on
+- what you would have done with more time, what you are not happy with inside the code, the project, ...
