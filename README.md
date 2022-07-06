@@ -1,35 +1,57 @@
-# minimal-react-webpack-babel-setup
+# CXFIRST JOB INTERVIEW
 
-[![Build Status](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup) [![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/minimal-react-webpack-babel-setup.svg)](https://greenkeeper.io/)
+## Abstract
 
-Read how to set it up yourself: [React with Webpack Tutorial](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/).
+This test is a working base for an open discussion on the technical choices you had made.
 
-[![Edit minimal-react-webpack-babel-setup](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/rwieruch/minimal-react-webpack-babel-setup/tree/master/?fontsize=14)
+You will need between 4 to 6 hours. The goal isn't to complete all the tasks and you are free to stop when you estimated you have been on it for long enough. However, you shouldn't excedd 6 hours because after all it's just a job interview.
 
-## Features
+You are free to ask any question by the medium you have been provided during the first stages of the hiring process (mail, teams, ...).
 
-- React 16
-- Webpack 5
-- Babel 7
-- Hot Module Replacement
+## Description
 
-## DIY Add-Ons
+The base project is a simple calculator written in `ReactJs` that we want to pimp with scientific calculus done by third party services and calculus history.
 
-- [ESLint](https://www.robinwieruch.de/react-eslint-webpack-babel/)
-- [CSS Modules](https://www.robinwieruch.de/react-css-modules/)
-- [SVG Icons](https://www.robinwieruch.de/react-svg-icon-components/)
-- [Fonts Support](https://www.robinwieruch.de/webpack-font/)
-- [Images Support](https://www.robinwieruch.de/webpack-images/)
-- [Docker](https://www.robinwieruch.de/docker-react-development)
+### Front
 
-## Alternatives
+The current calculator look like that :
 
-- [Advanced React Webpack Babel Setup](https://github.com/rwieruch/advanced-react-webpack-babel-setup) via this [Tutorial](https://www.robinwieruch.de/webpack-advanced-setup-tutorial)
+<img src="public/assests/standard_calculator.png" alt="drawing" width="200"/>
+
+The goal is to have both a standard calculation mode (that is used for simple calculus like `+,-,*,/`  and with the usual number `0,1,...9`) and a scientific like mode for more complex calculation.
+
+For that part you must stick to `ReactJs`.
+
+Here you could proceed by steps : implement first the functions `sin`, `cos`, `tan`, `exp`, `log` and the constants `pi`, `e`. 
+You are free to choose any of the following providers : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/Calculus*), `calculator-online` (*https://calculator-online.net/fr/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/calculatrice-formelle*).
+
+Then you can implement the computation of integrals. 
+
+$\int_a^b f(x, y, z, ...),\mathrm{d}x$
+
+Integrals have 4 parameters the lower bound `a`, the upper bound `b`, the function `f` and the function parameter we want to integrate `x` (that one is by default `x` and as an optional work if you have time you could let the user choose the variable for multivariable functions).
+
+You can consider that the functions will be of one parameter only (for example $f: x ↦ sin(x)$ and not $f: (x,y) ↦ cos(y) + sin(x)$ ).
+
+For that part, you are free to choose any of the following providers : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/fr/Calculus*), `calculator-online` (*https://calculator-online.net/fr/integral-calculator/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/definite-integral*).
+
+You could choose two different third party provider for each step.
+
+### Back
+
+The goal is to allow a user to view and replay any calculation and result he has done. Each user should be able to identify itself inside the calculator. But the loss of connectivity should not affect the use of the calculator, at least for the standard calculation mode.
+A user should be able to retrieve his history from any calculator on any computer from the moment he has been authenticated.
+
+For that part you are free to choose any of the following frameworks : `Symfony`, `Laravel`, `Ruby`, `Falcon`, `Django`.
+
+For the database : `Mysql`, `MariaDb`, `Postgrey`, `MongoDb`, `ElasticSearch`, `Neo4j`.
 
 ## Installation
 
-- `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-- cd minimal-react-webpack-babel-setup
-- npm install
-- npm start
-- visit `http://localhost:8080/`
+The project run inside a docker for ease of use. Run the following commands : 
+```bash
+docker-compose build
+docker-compose up
+```
+
+And go the `127.0.0.1:3035`
