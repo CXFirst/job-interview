@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js --mode development",
-    "start2": "webpack-dev-server --config ./webpack.config.js --mode development --hot --progress --color",
+    "start2": "webpack serve --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development --hot --progress --color",
     "test": "echo \"No test specified\" && exit 0"
   },
   "keywords": [],
