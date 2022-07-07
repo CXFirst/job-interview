@@ -31,7 +31,7 @@ $\int_a^b f(x, y, z, ...),\mathrm{d}x$
 
 Integrals have 4 parameters: the lower bound `a`, the upper bound `b`, the function `f` and the function parameter we want to integrate `x` (that one is by default `x` and as an optional work if you have time you could let the user choose the variable for multivariable functions).
 
-You can consider that the functions will be of one parameter only (for example $f: x ↦ sin(x)$ and not $f: (x,y) ↦ cos(y) + sin(x)$.
+You can consider that the functions will be of one parameter only (for example $f: x ↦ sin(x)$ and not $f: (x,y) ↦ cos(y) + sin(x)$).
 
 For that part, you are free to choose any of the following providers to integrate the needed functions : `Google calculator` (*https://www.google.com/search?q=google+calculator*), `MathWay` (*https://www.mathway.com/fr/Calculus*), `calculator-online` (*https://calculator-online.net/fr/integral-calculator/*), `WolfRam Alpha` (*https://www.wolframalpha.com/*), `Mathdf` (*https://mathdf.com/int/*), `Dcode` (*https://www.dcode.fr/definite-integral*).
 
@@ -54,7 +54,7 @@ docker-compose build
 docker-compose up
 ```
 
-And go the `127.0.0.1:3035`
+And go to `127.0.0.1:3035`
 
 You can also choose to run the project outside docker with `nodejs: ^14` (the version used inside the docker is `14.19.3`), then run :
 ```bash
